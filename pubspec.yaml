@@ -1,0 +1,26 @@
+name: octal_clock_app
+description: An Octal Clock implementation
+version: 0.0.1
+author: Brian Armstrong <brian@flutter.institute>
+homepage: https://github.com/killermonk/octal_clock_app
+
+dependencies:
+  flutter:
+    sdk: flutter
+  octal_clock: "^0.0.2"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the Icons class.
+  uses-material-design: true
