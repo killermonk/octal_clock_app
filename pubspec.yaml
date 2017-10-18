@@ -7,7 +7,7 @@ homepage: https://github.com/killermonk/octal_clock_app
 dependencies:
   flutter:
     sdk: flutter
-  octal_clock: "^0.0.2"
+  octal_clock: "^0.0.5"
 
 dev_dependencies:
   flutter_test:
