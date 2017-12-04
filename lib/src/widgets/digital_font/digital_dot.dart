@@ -29,7 +29,8 @@ class _DigitalDotPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_DigitalDotPainter oldDelegate) {
-    return height != oldDelegate.height;
+    return height != oldDelegate.height
+        || color != oldDelegate.color;
   }
 
   @override

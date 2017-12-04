@@ -75,7 +75,7 @@ class _ClockPageState extends State<ClockPage> {
 
     final String date = '${_time.year}-${_time.month}-${_time.day}';
 
-    Color color = _color != null ? _color : themeData.textTheme.display1.color;
+    final Color color = _color ?? themeData.textTheme.display1.color;
 
     return new Scaffold(
       appBar: new AppBar(

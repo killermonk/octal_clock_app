@@ -29,7 +29,8 @@ class _DigitalColonPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_DigitalColonPainter oldDelegate) {
-    return height != oldDelegate.height;
+    return height != oldDelegate.height
+        || color != oldDelegate.color;
   }
 
   @override
