@@ -36,10 +36,10 @@ Offset _getPosition(double timePart, double timeTotal, double length) {
   // What percentage of the whole have we covered
   final percentage = timePart / timeTotal;
   // -2PI*percentage is how many radians we have moved clockwise
-  // then we rotate backwards 90 degrees for correct position
-  final radians = 2 * PI * percentage - PI / 2;
+  // then we rotate backwards 180 degrees to correct for quandrant
+  final radians = -2 * PI * percentage - PI;
 
-  return new Offset(length * cos(radians), length * sin(radians));
+  return new Offset(length * sin(radians), length * cos(radians));
 }
 
 /// Painter to draw the very static parts of the clock face
